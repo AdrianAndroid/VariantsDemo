@@ -1,0 +1,587 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.variants.demo'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.variants.demo"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        v0 {
+            dimension "default"
+            applicationId "com.variants.v0"
+        }
+
+        v1 {
+            dimension "default"
+            applicationId "com.variants.v1"
+        }
+
+        v2 {
+            dimension "default"
+            applicationId "com.variants.v2"
+        }
+
+        v3 {
+            dimension "default"
+            applicationId "com.variants.v3"
+        }
+
+        v4 {
+            dimension "default"
+            applicationId "com.variants.v4"
+        }
+
+        v5 {
+            dimension "default"
+            applicationId "com.variants.v5"
+        }
+
+        v6 {
+            dimension "default"
+            applicationId "com.variants.v6"
+        }
+
+        v7 {
+            dimension "default"
+            applicationId "com.variants.v7"
+        }
+
+        v8 {
+            dimension "default"
+            applicationId "com.variants.v8"
+        }
+
+        v9 {
+            dimension "default"
+            applicationId "com.variants.v9"
+        }
+
+        v10 {
+            dimension "default"
+            applicationId "com.variants.v10"
+        }
+
+        v11 {
+            dimension "default"
+            applicationId "com.variants.v11"
+        }
+
+        v12 {
+            dimension "default"
+            applicationId "com.variants.v12"
+        }
+
+        v13 {
+            dimension "default"
+            applicationId "com.variants.v13"
+        }
+
+        v14 {
+            dimension "default"
+            applicationId "com.variants.v14"
+        }
+
+        v15 {
+            dimension "default"
+            applicationId "com.variants.v15"
+        }
+
+        v16 {
+            dimension "default"
+            applicationId "com.variants.v16"
+        }
+
+        v17 {
+            dimension "default"
+            applicationId "com.variants.v17"
+        }
+
+        v18 {
+            dimension "default"
+            applicationId "com.variants.v18"
+        }
+
+        v19 {
+            dimension "default"
+            applicationId "com.variants.v19"
+        }
+
+        v20 {
+            dimension "default"
+            applicationId "com.variants.v20"
+        }
+
+        v21 {
+            dimension "default"
+            applicationId "com.variants.v21"
+        }
+
+        v22 {
+            dimension "default"
+            applicationId "com.variants.v22"
+        }
+
+        v23 {
+            dimension "default"
+            applicationId "com.variants.v23"
+        }
+
+        v24 {
+            dimension "default"
+            applicationId "com.variants.v24"
+        }
+
+        v25 {
+            dimension "default"
+            applicationId "com.variants.v25"
+        }
+
+        v26 {
+            dimension "default"
+            applicationId "com.variants.v26"
+        }
+
+        v27 {
+            dimension "default"
+            applicationId "com.variants.v27"
+        }
+
+        v28 {
+            dimension "default"
+            applicationId "com.variants.v28"
+        }
+
+        v29 {
+            dimension "default"
+            applicationId "com.variants.v29"
+        }
+
+        v30 {
+            dimension "default"
+            applicationId "com.variants.v30"
+        }
+
+        v31 {
+            dimension "default"
+            applicationId "com.variants.v31"
+        }
+
+        v32 {
+            dimension "default"
+            applicationId "com.variants.v32"
+        }
+
+        v33 {
+            dimension "default"
+            applicationId "com.variants.v33"
+        }
+
+        v34 {
+            dimension "default"
+            applicationId "com.variants.v34"
+        }
+
+        v35 {
+            dimension "default"
+            applicationId "com.variants.v35"
+        }
+
+        v36 {
+            dimension "default"
+            applicationId "com.variants.v36"
+        }
+
+        v37 {
+            dimension "default"
+            applicationId "com.variants.v37"
+        }
+
+        v38 {
+            dimension "default"
+            applicationId "com.variants.v38"
+        }
+
+        v39 {
+            dimension "default"
+            applicationId "com.variants.v39"
+        }
+
+        v40 {
+            dimension "default"
+            applicationId "com.variants.v40"
+        }
+
+        v41 {
+            dimension "default"
+            applicationId "com.variants.v41"
+        }
+
+        v42 {
+            dimension "default"
+            applicationId "com.variants.v42"
+        }
+
+        v43 {
+            dimension "default"
+            applicationId "com.variants.v43"
+        }
+
+        v44 {
+            dimension "default"
+            applicationId "com.variants.v44"
+        }
+
+        v45 {
+            dimension "default"
+            applicationId "com.variants.v45"
+        }
+
+        v46 {
+            dimension "default"
+            applicationId "com.variants.v46"
+        }
+
+        v47 {
+            dimension "default"
+            applicationId "com.variants.v47"
+        }
+
+        v48 {
+            dimension "default"
+            applicationId "com.variants.v48"
+        }
+
+        v49 {
+            dimension "default"
+            applicationId "com.variants.v49"
+        }
+
+        v50 {
+            dimension "default"
+            applicationId "com.variants.v50"
+        }
+
+        v51 {
+            dimension "default"
+            applicationId "com.variants.v51"
+        }
+
+        v52 {
+            dimension "default"
+            applicationId "com.variants.v52"
+        }
+
+        v53 {
+            dimension "default"
+            applicationId "com.variants.v53"
+        }
+
+        v54 {
+            dimension "default"
+            applicationId "com.variants.v54"
+        }
+
+        v55 {
+            dimension "default"
+            applicationId "com.variants.v55"
+        }
+
+        v56 {
+            dimension "default"
+            applicationId "com.variants.v56"
+        }
+
+        v57 {
+            dimension "default"
+            applicationId "com.variants.v57"
+        }
+
+        v58 {
+            dimension "default"
+            applicationId "com.variants.v58"
+        }
+
+        v59 {
+            dimension "default"
+            applicationId "com.variants.v59"
+        }
+
+        v60 {
+            dimension "default"
+            applicationId "com.variants.v60"
+        }
+
+        v61 {
+            dimension "default"
+            applicationId "com.variants.v61"
+        }
+
+        v62 {
+            dimension "default"
+            applicationId "com.variants.v62"
+        }
+
+        v63 {
+            dimension "default"
+            applicationId "com.variants.v63"
+        }
+
+        v64 {
+            dimension "default"
+            applicationId "com.variants.v64"
+        }
+
+        v65 {
+            dimension "default"
+            applicationId "com.variants.v65"
+        }
+
+        v66 {
+            dimension "default"
+            applicationId "com.variants.v66"
+        }
+
+        v67 {
+            dimension "default"
+            applicationId "com.variants.v67"
+        }
+
+        v68 {
+            dimension "default"
+            applicationId "com.variants.v68"
+        }
+
+        v69 {
+            dimension "default"
+            applicationId "com.variants.v69"
+        }
+
+        v70 {
+            dimension "default"
+            applicationId "com.variants.v70"
+        }
+
+        v71 {
+            dimension "default"
+            applicationId "com.variants.v71"
+        }
+
+        v72 {
+            dimension "default"
+            applicationId "com.variants.v72"
+        }
+
+        v73 {
+            dimension "default"
+            applicationId "com.variants.v73"
+        }
+
+        v74 {
+            dimension "default"
+            applicationId "com.variants.v74"
+        }
+
+        v75 {
+            dimension "default"
+            applicationId "com.variants.v75"
+        }
+
+        v76 {
+            dimension "default"
+            applicationId "com.variants.v76"
+        }
+
+        v77 {
+            dimension "default"
+            applicationId "com.variants.v77"
+        }
+
+        v78 {
+            dimension "default"
+            applicationId "com.variants.v78"
+        }
+
+        v79 {
+            dimension "default"
+            applicationId "com.variants.v79"
+        }
+
+        v80 {
+            dimension "default"
+            applicationId "com.variants.v80"
+        }
+
+        v81 {
+            dimension "default"
+            applicationId "com.variants.v81"
+        }
+
+        v82 {
+            dimension "default"
+            applicationId "com.variants.v82"
+        }
+
+        v83 {
+            dimension "default"
+            applicationId "com.variants.v83"
+        }
+
+        v84 {
+            dimension "default"
+            applicationId "com.variants.v84"
+        }
+
+        v85 {
+            dimension "default"
+            applicationId "com.variants.v85"
+        }
+
+        v86 {
+            dimension "default"
+            applicationId "com.variants.v86"
+        }
+
+        v87 {
+            dimension "default"
+            applicationId "com.variants.v87"
+        }
+
+        v88 {
+            dimension "default"
+            applicationId "com.variants.v88"
+        }
+
+        v89 {
+            dimension "default"
+            applicationId "com.variants.v89"
+        }
+
+        v90 {
+            dimension "default"
+            applicationId "com.variants.v90"
+        }
+
+        v91 {
+            dimension "default"
+            applicationId "com.variants.v91"
+        }
+
+        v92 {
+            dimension "default"
+            applicationId "com.variants.v92"
+        }
+
+        v93 {
+            dimension "default"
+            applicationId "com.variants.v93"
+        }
+
+        v94 {
+            dimension "default"
+            applicationId "com.variants.v94"
+        }
+
+        v95 {
+            dimension "default"
+            applicationId "com.variants.v95"
+        }
+
+        v96 {
+            dimension "default"
+            applicationId "com.variants.v96"
+        }
+
+        v97 {
+            dimension "default"
+            applicationId "com.variants.v97"
+        }
+
+        v98 {
+            dimension "default"
+            applicationId "com.variants.v98"
+        }
+
+        v99 {
+            dimension "default"
+            applicationId "com.variants.v99"
+        }
+
+        v100 {
+            dimension "default"
+            applicationId "com.variants.v100"
+        }
+
+        v101 {
+            dimension "default"
+            applicationId "com.variants.v101"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+//https://zhuanlan.zhihu.com/p/179285148
+task productInstalls() {
+    setGroup("zhaojian")
+    doLast {
+        def apkDir = file('/Users/apus/AndroidStudioProjects/VariantsDemo/app/build/outputs/apk') // 替换为您的 APK 文件夹路径
+        def adbPath = android.getAdbExe().toString()
+        commandLine "$adbPath", 'devices'
+        def devicesResult = exec {
+            commandLine "$adbPath", 'devices', '-l'
+        }
+        def device = devicesResult.text.split()[5]
+
+        apkDir.eachFileRecurse { apk ->
+            if (apk.name.endsWith('.apk')) {
+                doLast {
+                    def installResult = exec {
+                        commandLine "$adbPath", '-s', device, 'install', '-r', apk.getAbsolutePath()
+                    }
+                    if (installResult.exitValue() != 0) {
+                        throw new GradleException("Failed to install ${apk.getName()}")
+                    } else {
+                        println "Installed ${apk.getName()}"
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
