@@ -546,7 +546,8 @@ android {
     }
 }
 
-task installApks(type: Exec) {
+task installApks_98KAY15DVD(type: Exec) {
+    setGroup("zhaojian")
     def apkDir = file('/Users/apus/AndroidStudioProjects/VariantsDemo/app/build/outputs/apk') // 替换为您的 APK 文件夹路径
     //def adbPath = android.sdkDirectory.getAbsolutePath() + "/platform-tools/adb"
     def adbPath = "/Users/apus/Library/Android/sdk/platform-tools/adb"
@@ -556,7 +557,7 @@ task installApks(type: Exec) {
 //            commandLine "$adbPath", 'devices', '-l'
 //        }
         def device = '98KAY15DVD' //devicesResult.text.split()[5]
-        //def device = '98badcb9' //devicesResult.text.split()[5]
+//        def device = '98badcb9' //devicesResult.text.split()[5]
 
         apkDir.traverse { apk ->
             if (apk.isFile() && apk.getName().endsWith(".apk")) {
@@ -567,6 +568,34 @@ task installApks(type: Exec) {
 //                    throw new GradleException("Failed to install ${apk.getName()}")
 //                } else {
                     println "Installed ${apk.getName()}"
+//                }
+            }
+        }
+    }
+}
+
+task installApks_98badcb9(type: Exec) {
+    setGroup("zhaojian")
+    def apkDir = file('/Users/apus/AndroidStudioProjects/VariantsDemo/app/build/outputs/apk') // 替换为您的 APK 文件夹路径
+    //def adbPath = android.sdkDirectory.getAbsolutePath() + "/platform-tools/adb"
+    def adbPath = "/Users/apus/Library/Android/sdk/platform-tools/adb"
+    commandLine "$adbPath", 'devices'
+    doLast {
+//        def devicesResult = exec {
+//            commandLine "$adbPath", 'devices', '-l'
+//        }
+//        def device = '98KAY15DVD' //devicesResult.text.split()[5]
+        def device = '98badcb9' //devicesResult.text.split()[5]
+
+        apkDir.traverse { apk ->
+            if (apk.isFile() && apk.getName().endsWith(".apk")) {
+                def installResult = exec {
+                    commandLine "$adbPath", '-s', device, 'install', '-r', apk.getAbsolutePath()
+                }
+//                if (installResult.exitValue() != 0) {
+//                    throw new GradleException("Failed to install ${apk.getName()}")
+//                } else {
+                println "Installed ${apk.getName()}"
 //                }
             }
         }
